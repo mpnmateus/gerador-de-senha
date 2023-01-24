@@ -29,11 +29,17 @@
                 password += chars.substring(randomNumber, randomNumber + 1) //+= para concatenar
             }
             
-            const inputEl = window.document.querySelector("#password") //pegando elemento do DOM via id
+            const inputEl = window.document.querySelector("#password") //recuperando elemento do DOM via id
             inputEl.value = password
             
             console.log(password)
         }
+
+        const passwordLengthEl = window.document.querySelector("#password-length")
+        passwordLengthEl.addEventListener("input", function () {
+            
+        })
+
         generatePassword()
     </script>
 </body>
