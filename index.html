@@ -26,8 +26,12 @@
 
             for (let i = 0; i < 8; i++) {
                 const randomNumber = Math.floor(Math.random() * chars.length)
-                password += chars.substring(randomNumber, randomNumber + 1)
-            }  
+                password += chars.substring(randomNumber, randomNumber + 1) //+= para concatenar
+            }
+            
+            const inputEl = window.document.querySelector("#password") //pegando elemento do DOM via id
+            inputEl.value = password
+            
             console.log(password)
         }
         generatePassword()
