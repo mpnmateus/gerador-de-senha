@@ -19,8 +19,9 @@
     </section>
 
     <script>
+        const inputEl = window.document.querySelector("#password") //recuperando elemento do DOM via id
         let passwordLength = 16
-
+        
         function generatePassword(){
             const chars = "abcdefghjkmnpqrstuvwyxzABCDEFGHJKLMNPQRSTUVWYXZ123456789?!@&*()[]"
 
@@ -31,14 +32,13 @@
                 password += chars.substring(randomNumber, randomNumber + 1) //+= para concatenar
             }
             
-            const inputEl = window.document.querySelector("#password") //recuperando elemento do DOM via id
             inputEl.value = password
             
             console.log(password)
         }
 
         function copy () {
-            navigator.clipboard.writeText()
+            navigator.clipboard.writeText(inputEl.value)
         }
 
         const passwordLengthEl = window.document.querySelector("#password-length")
