@@ -37,6 +37,10 @@
             console.log(password)
         }
 
+        function copy () {
+            navigator.clipboard.writeText()
+        }
+
         const passwordLengthEl = window.document.querySelector("#password-length")
         passwordLengthEl.addEventListener("input", function () {
             passwordLength = passwordLengthEl.value
