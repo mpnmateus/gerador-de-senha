@@ -29,3 +29,9 @@ ol,
 ul {
     list-style: none;
 }
+
+/* Imagem responsiva: */
+img {
+    max-width: 100%;
+    height: auto;
+}
