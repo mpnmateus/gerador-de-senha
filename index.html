@@ -10,16 +10,15 @@
     <title>Gerador de senha</title>
 </head>
 <body>
-    <section>
-        
-        <h1>Gerador de senha</h1>
-        
-        <p>Utilize o nosso gerador online para criar uma senha forte e segura.</p>
-
-        <input type="text" name="password" id="password">
-        <input type="range" name="password-length" id="password-length" value="16" min="4" max="64">
-        <button id="copy">Copiar senha</button>
-    </section>
+    <main>
+            <section class="hero">
+                <h1 class="title">Gerador de senha</h1>
+                <p class="subtitle">Utilize o nosso gerador online para criar uma senha forte e segura.</p>
+            </section>
+            <input type="text" name="password" id="password">
+            <input type="range" name="password-length" id="password-length" value="16" min="4" max="64">
+            <button id="copy">Copiar senha</button>
+    </main>
 
     <script>
         const inputEl = window.document.querySelector("#password") //recuperando elemento do DOM via id
