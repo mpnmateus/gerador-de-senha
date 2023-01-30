@@ -32,3 +32,11 @@ main {
     border-radius: 8px;
     margin-bottom: 3rem;
 }
+
+.password {
+    display: flex;
+}
+
+.password .text {
+    flex: 1;
+}
