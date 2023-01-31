@@ -33,10 +33,13 @@
                         </button>
                     </div>
                 </div>
+                <div class="security-indicator">
+                    <div id="security-indicator-bar" class="bar" style="width: 90%">
+                    </div>
+                </div>
             </section>
 
-            
-            <input type="range" name="password-length" id="password-length" value="16" min="4" max="64">
+            <input type="range" name="password-length" id="password-length" value="16" min="4" max="64"/>
             <button id="copy-2">Copiar senha</button>
     </main>
 
@@ -59,8 +62,8 @@
             console.log(password)
         }
 
-        function copy () {
-            navigator.clipboard.writeText(inputEl.value)
+        function copy() {
+        navigator.clipboard.writeText(inputEl.value)
         }
 
         const passwordLengthEl = window.document.querySelector("#password-length")
@@ -70,8 +73,8 @@
             console.log(passwordLength) 
         })
 
-        const copyButtonEl = window.document.querySelector("#copy")
-        copyButtonEl.addEventListener("click", copy)
+        document.querySelector("#copy-1").addEventListener("click", copy)
+        document.querySelector("#copy-2").addEventListener("click", copy)
 
         generatePassword()
     </script>
