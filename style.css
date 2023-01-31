@@ -35,6 +35,8 @@ main {
 
 .password {
     display: flex;
+    align-items: center;
+    padding: 1rem 1.5rem;
 }
 .password .text {
     flex: 1;
@@ -48,8 +50,8 @@ main {
     height: 52px;
     width: 100%;
     transition: all 0.2s;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
+    -webkit-user-select: none; /*Safari*/
+    -moz-user-select: none; 
+    -ms-user-select: none; /*IE 10+*/
     user-select: none; /*Não permite o select do usuário*/
 }
