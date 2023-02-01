@@ -158,3 +158,12 @@ main {
     opacity: 0;
     cursor: pointer;
 }
+.checkbox-container .checkmark{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #dddddd;
+    transition: all 0.2s;
+}
