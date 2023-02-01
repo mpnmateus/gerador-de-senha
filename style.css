@@ -151,3 +151,10 @@ main {
     -ms-user-select: none;
     user-select: none;
 }
+.checkbox-container input {
+    position: absolute;
+    height: 0;
+    width: 0;
+    opacity: 0;
+    cursor: pointer;
+}
