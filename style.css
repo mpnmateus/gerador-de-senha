@@ -77,3 +77,19 @@ main {
 
     transition: all 0.2s; /*Qualquer efeito que demora 0.2s para ser aplicado em formato de rampa (gera efeito de animação)*/
 }
+.security-indicator .bar.completed{
+    border-top-right-radius: 0;
+}
+.security-indicator .bar.critical{
+    background-color: #eb5757;
+}
+.security-indicator .bar.warning{
+    background-color: #f2c94c;
+}
+.security-indicator .bar.safe{
+    background-color: #27ae60;
+}
+
+.customize{
+    padding: 1rem 1.5 rem;
+}
