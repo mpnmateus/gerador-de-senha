@@ -108,3 +108,15 @@ main {
 .customize .password-length{
     flex: 1;
 }
+.customize .password-length .slider{
+    appearance: none;
+    -webkit-appearance: none;
+    height: 10px;
+    background: #dddddd;
+    outline: none;
+    border-radius: 8px;
+    width: 100%;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+    margin-top: 1rem;
+}
