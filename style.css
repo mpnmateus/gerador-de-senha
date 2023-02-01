@@ -120,3 +120,15 @@ main {
     transition: opacity 0.2s;
     margin-top: 1rem;
 }
+.customize .password-length .slider:hover{
+    opacity: 1;
+}
+.customize .password-length .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    background: #9b51e0;
+    cursor: pointer;
+}
