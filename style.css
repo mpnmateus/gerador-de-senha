@@ -132,3 +132,10 @@ main {
     background: #9b51e0;
     cursor: pointer;
 }
+.customize .password-length .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    background: #9b51e0;
+    cursor: pointer;
+}
