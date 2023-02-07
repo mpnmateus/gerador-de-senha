@@ -80,6 +80,10 @@
 
     <script>
         const inputEl = window.document.querySelector("#password") //recuperando elemento do DOM via id
+        const upperCaseCheckEl = document.querySelector("#uppercase-check")
+        const numberCheckEl = document.querySelector("#number-check")
+        const symbolCheckEl = document.querySelector("#symbol-check")
+
         let passwordLength = 16
         
         function generatePassword(){
@@ -89,10 +93,15 @@
             const numberChars = "123456789"
             const symbolChars = "?!@&*()[]"
 
-            //if()
-            chars += upperCaseChars
-            chars += numberChars
-            chars += symbolChars
+            if(upperCaseCheckEl.checked) {
+                chars += upperCaseChars
+            }
+            if(numberCheckEl.checked) {
+                chars += numberChars
+            }
+            if(symbolCheckEl.checked){
+                chars += symbolChars
+            }
 
             let password = ""
 
