@@ -187,5 +187,7 @@ main {
 }
 .checkbox-container input:checked ~ .checkmark:after {
     display: block;
-  }
-  
+}
+.submit {
+    text-align: center;
+}
