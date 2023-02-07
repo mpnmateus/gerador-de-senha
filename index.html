@@ -83,7 +83,16 @@
         let passwordLength = 16
         
         function generatePassword(){
-            const chars = "abcdefghjkmnpqrstuvwyxzABCDEFGHJKLMNPQRSTUVWYXZ123456789?!@&*()[]"
+            let chars = "abcdefghjkmnpqrstuvwyxz"
+
+            const upperCaseChars = "ABCDEFGHJKLMNPQRSTUVWYXZ"
+            const numberChars = "123456789"
+            const symbolChars = "?!@&*()[]"
+
+            //if()
+            chars += upperCaseChars
+            chars += numberChars
+            chars += symbolChars
 
             let password = ""
 
