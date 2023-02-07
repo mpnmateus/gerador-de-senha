@@ -199,4 +199,8 @@ main {
     border-radius: 8px;
     cursor: pointer;
     padding: 1rem 2rem;
+    transition: all 0.2s; /* Leva 0.2s para transicionar as propriedades do CSS, as mais visiveis: pointer e hover*/
+}
+.submit button:hover{
+    background-color: #9b51e0;
 }
