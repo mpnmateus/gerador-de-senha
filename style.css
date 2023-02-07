@@ -191,3 +191,10 @@ main {
 .submit {
     text-align: center;
 }
+.submit button { /* O botão que está dentro do submit */
+    background-color: #bb6bd9;
+    font-size: 1.375rem;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+}
