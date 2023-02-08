@@ -34,7 +34,7 @@
                     </div>
                 </div>
                 <div class="security-indicator">
-                    <div id="security-indicator-bar" class="bar" style="width: 90%">
+                    <div id="security-indicator-bar" class="bar critical">
                     </div>
                 </div>
             </section>
@@ -124,6 +124,8 @@
             // 64/64 = 1 => 100%
             const percent = Math.round((passwordLength / 64) * 100)
             console.log(percent)
+
+            securityIndicatorBarEl.style.width = `${percent}%`
         }
 
         function copy() {
