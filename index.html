@@ -127,13 +127,24 @@
             //T*0.25 + M*0.15 + N*0.25 + S*0.35
             const percent = Math.round(
                 (passwordLength / 64) * 25 + 
-            (upperCaseCheckEl.checked ? 15 : 0)
+            (upperCaseCheckEl.checked ? 15 : 0) + 
+            (numberCheckEl.checked ? 25 : 0) +
+            (symbolCheckEl.checked ? 35 : 0)  
             )
             
             
             console.log(percent)
 
             securityIndicatorBarEl.style.width = `${percent}%`
+
+            if(percent > 69){
+                //safe
+            } else if (percent > 50){
+                //warning
+            } else {
+                //critical
+            }
+
         }
 
         function copy() {
