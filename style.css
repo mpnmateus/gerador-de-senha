@@ -54,6 +54,16 @@ main {
     -ms-user-select: none; /*IE 10+*/
     user-select: none; /*Não permite o select do usuário*/
 }
+.password .text input.font-sm{
+    font-size: 2rem;
+}
+.password .text input.font-xs{
+    font-size: 1.5rem;
+}
+.password .text input.font-xxs{
+    font-size: 1rem;
+}
+
 .password .actions button {
     background-color: transparent;
     border: none;
