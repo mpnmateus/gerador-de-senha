@@ -115,16 +115,27 @@
             console.log(password)
         }
 
+        function calculateQuality(){
+            // 20% -> crítico --- 100% -> safe
+            // 64/64 = 1 => 100%
+            const percent = (passwordLength / 64) * 100
+        }
+
         function copy() {
-        navigator.clipboard.writeText(inputEl.value)
+            navigator.clipboard.writeText(inputEl.value)
         }
 
         const passwordLengthEl = window.document.querySelector("#password-length")
         passwordLengthEl.addEventListener("input", function () {
             passwordLength = passwordLengthEl.value
+            document.querySelector("#password-length-text").innerText = passwordLength
             generatePassword()
             console.log(passwordLength) 
         })
+        upperCaseCheckEl.addEventListener("click", generatePassword)
+        numberCheckEl.addEventListener("click", generatePassword)
+        symbolCheckEl.addEventListener("click", generatePassword)
+
 
         document.querySelector("#copy-1").addEventListener("click", copy)
         document.querySelector("#copy-2").addEventListener("click", copy)
