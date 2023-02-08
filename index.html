@@ -115,6 +115,7 @@
             inputEl.value = password
             
             calculateQuality()
+            calculateFontSize()
 
             console.log(password)
         }
@@ -164,7 +165,7 @@
 
         function calculateFontSize() {
             if(passwordLength > 45){
-
+                inputEl.classList.remove("font-sm")
             } else if(passwordLength > 32) {
 
             } else if(passwordLength > 22) {
