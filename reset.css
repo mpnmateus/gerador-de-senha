@@ -1,13 +1,13 @@
 html {
     box-sizing: border-box;
     font-size: 16px;
-}
+  }
 
 /*Todos elementos*/
 *,
 *:before,
 *:after {
-    box-sizing: inherit; /*Definindo herança (inherit) do elemento pai*/
+  box-sizing: inherit; /*Definindo herança (inherit) do elemento pai*/
 }
 
 body,
@@ -20,18 +20,18 @@ h6,
 p,
 ol,
 ul {
-    margin: 0;
-    padding: 0;
-    font-weight: normal;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
 }
 
 ol,
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 /* Imagem responsiva: */
 img {
     max-width: 100%;
     height: auto;
-}
+  }
