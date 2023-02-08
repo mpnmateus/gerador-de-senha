@@ -162,6 +162,18 @@
 
         }
 
+        function calculateFontSize() {
+            if(passwordLength > 45){
+
+            } else if(passwordLength > 32) {
+
+            } else if(passwordLength > 22) {
+
+            } else { //Backup (costuma-se chamar de callback)
+
+            }
+        }
+
         function copy() {
             navigator.clipboard.writeText(inputEl.value)
         }
