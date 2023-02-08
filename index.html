@@ -118,7 +118,7 @@
         function calculateQuality(){
             // 20% -> crítico --- 100% -> safe
             // 64/64 = 1 => 100%
-            const percent = (passwordLength / 64) * 100
+            const percent = Math.round((passwordLength / 64) * 100)
         }
 
         function copy() {
