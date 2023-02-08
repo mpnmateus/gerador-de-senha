@@ -122,7 +122,15 @@
         function calculateQuality(){
             // 20% -> crítico --- 100% -> safe
             // 64/64 = 1 => 100%
-            const percent = Math.round((passwordLength / 64) * 100)
+
+            //PESOS:
+            //T*0.25 + M*0.15 + N*0.25 + S*0.35
+            const percent = Math.round(
+                (passwordLength / 64) * 25 + 
+            (upperCaseCheckEl.checked ? 15 : 0)
+            )
+            
+            
             console.log(percent)
 
             securityIndicatorBarEl.style.width = `${percent}%`
