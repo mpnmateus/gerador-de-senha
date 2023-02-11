@@ -28,7 +28,7 @@
                         <button id="copy-1">
                             <img src="images/copy.svg" width="42">
                         </button>
-                        <button id="refresh">
+                        <button id="renew">
                             <img src="images/renew.svg" width="42">
                         </button>
                     </div>
@@ -201,6 +201,10 @@
 
         document.querySelector("#copy-1").addEventListener("click", copy)
         document.querySelector("#copy-2").addEventListener("click", copy)
+        document
+        .querySelector("#renew")
+        .addEventListener("click", generatePassword)
+
 
         generatePassword()
     </script>
